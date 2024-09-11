@@ -1,0 +1,168 @@
+/* Base styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #0f0f0f;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+.form-container {
+	width: 600px;
+	height: 500px;
+	padding: 2rem;
+}
+
+form {
+	background-color: #010f5b;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+input {
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 2.5rem;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	font-size: 1rem;
+	/* background-color: #c0caf4; */
+	transition: border-color 0.3s;
+}
+
+input:focus {
+	border-color: #7d8afa;
+	outline: none;
+}
+
+.error-message {
+	color: #ff1818;
+	margin-top: -2rem;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	position: absolute;
+}
+
+button {
+	background-color: #030408;
+	color: #ffffff;
+	padding: 0.75rem 1.5rem;
+	margin-right: 1rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+	background-color: #0a0a0a;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+	background-color: #44475a;
+	cursor: not-allowed;
+}
+
+/* Progress indicators */
+.step-indicator {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.step {
+	width: 20px;
+	height: 20px;
+	background-color: #44475a;
+	border-radius: 50%;
+	margin: 0 0.5rem;
+	transition: background-color 0.3s;
+}
+
+.step.active {
+	background-color: #50a1da;
+}
+
+/* Form transition */
+form {
+	transition: all 0.5s ease-in-out;
+}
+
+/* Form result styling */
+.form-result {
+	height: 500px;
+	background-color: #010f5b;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	position: relative;
+	color: #ffffff;
+}
+
+.form-result h2 {
+	margin-bottom: 1rem;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.submit-another-form-btn {
+	position: absolute;
+	bottom: 40px;
+}
+
+pre {
+	background-color: #3b3f50;
+	color: #e0e0e0;
+	padding: 1rem;
+	border-radius: 8px;
+	white-space: pre-wrap;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+	.form-container {
+		width: 100%;
+	}
+
+	form {
+		width: 90%;
+	}
+}
