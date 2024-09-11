@@ -276,9 +276,9 @@ const MultiStepForm = () => {
 					)}
 				</Formik>
 			) : (
-				<div className='form-result'>
+				<div className='form-result-container'>
 					<h2>Form Submitted Successfully!</h2>
-					<div>
+					<div className='form-result'>
 						<p>
 							<strong>First Name:</strong> {formData.firstName}
 						</p>
